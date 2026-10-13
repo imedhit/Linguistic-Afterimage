@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ec(ak)ou Website Iterations Gallery</title>
+  <style>
+    :root {
+      --bg: #05070a;
+      --card-bg: #090d16;
+      --border: rgba(255, 255, 255, 0.12);
+      --cyan: #00f5d4;
+      --magenta: #f43f5e;
+      --amber: #f59e0b;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding: 32px 24px;
+      line-height: 1.5;
+    }
+    header {
+      max-width: 1280px;
+      margin: 0 auto 36px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      font-size: 11px;
+      text-transform: uppercase;
+      font-family: monospace;
+      padding: 3px 8px;
+      border-radius: 3px;
+      background: rgba(0, 245, 212, 0.15);
+      color: var(--cyan);
+      border: 1px solid rgba(0, 245, 212, 0.3);
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 6px;
+    }
+    .grid {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+    .iteration-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    }
+    .card-header {
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .card-title-group h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .card-title-group p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .btn-group {
+      display: flex;
+      gap: 10px;
+    }
+    button.btn {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-family: monospace;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    button.btn:hover {
+      background: rgba(0, 245, 212, 0.2);
+      border-color: var(--cyan);
+      color: var(--cyan);
+    }
+    button.btn-primary {
+      background: var(--cyan);
+      color: #05070a;
+      font-weight: 600;
+      border: none;
+    }
+    button.btn-primary:hover {
+      background: #70fff0;
+      color: #05070a;
+    }
+    .preview-container {
+      position: relative;
+      width: 100%;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .preview-container svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      max-height: 720px;
+    }
+    .card-footer {
+      padding: 14px 24px;
+      font-size: 12px;
+      font-family: monospace;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      background: rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>
+        Ec(ak)ou Ghost Speech Cartography
+        <span class="badge">Archive of Iterations</span>
+      </h1>
+      <p class="subtitle">Complete visual snapshots of all 4 website design and architecture iterations. Download high-resolution PNG or vector SVG files directly below.</p>
+    </div>
+  </header>
+
+  <main class="grid">
+
+    <!-- ITERATION 1 -->
+    <article class="iteration-card">
+      <div class="card-header">
+        <div class="card-title-group">
+          <h2>
+            <span>Iteration 1: Speculative Abstract Cartography Prototype</span>
+            <span class="badge" style="background: rgba(244, 63, 94, 0.15); color: #f43f5e; border-color: rgba(244,63,94,0.3);">Initial Concept</span>
+          </h2>
+          <p>Procedural glowing dark canvas, stippled building parcels, acoustic radar sweeps, Web Audio API synthesis engine, and editorial signal dossier.</p>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary" onclick="downloadAsPNG('svg-iter-1', 'ecakou_iteration_1_abstract_cartography.png')">
+            ⬇ Download PNG (1920×1080)
+          </button>
+          <button class="btn" onclick="downloadAsSVG('svg-iter-1', 'ecakou_iteration_1_abstract_cartography.svg')">
+            ⬇ Download SVG
+          </button>
+        </div>
+      </div>
+      <div class="preview-container">
+        <svg id="svg-iter-1" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#05070a"/>
+              <stop offset="100%" stop-color="#020305"/>
+            </linearGradient>
+            <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="4" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+            <filter id="magentaGlow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="5" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+            <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+            </pattern>
+          </defs>
+
+          <!-- Background -->
+          <rect width="1920" height="1080" fill="url(#bgGrad1)"/>
+          <rect width="1920" height="1080" fill="url(#gridPattern)"/>
+
+          <!-- Top Navigation Bar -->
+          <rect width="1920" height="64" fill="#06080d" opacity="0.95"/>
+          <line x1="0" y1="64" x2="1920" y2="64" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+          
+          <text x="32" y="40" fill="#ffffff" font-family="Georgia, serif" font-size="20" letter-spacing="-0.5">Ec(ak)ou Ghost Speech Cartography</text>
+          
+          <text x="500" y="38" fill="#00f5d4" font-family="monospace" font-size="12" letter-spacing="1">CHICKPET PETE</text>
+          <text x="640" y="38" fill="#94a3b8" font-family="monospace" font-size="12" letter-spacing="1">RUSSELL MARKET</text>
+          <text x="790" y="38" fill="#94a3b8" font-family="monospace" font-size="12" letter-spacing="1">ULSOOR CISTERN</text>
+          <text x="940" y="38" fill="#94a3b8" font-family="monospace" font-size="12" letter-spacing="1">MALLESWARAM</text>
+          <text x="1080" y="38" fill="#94a3b8" font-family="monospace" font-size="12" letter-spacing="1">ROUTE FINDER</text>
+
+          <rect x="1560" y="16" width="160" height="32" rx="3" fill="rgba(0, 245, 212, 0.1)" stroke="rgba(0, 245, 212, 0.4)"/>
+          <text x="1585" y="37" fill="#00f5d4" font-family="monospace" font-size="11" letter-spacing="1">SPECTRAL VISION</text>
+          
+          <rect x="1740" y="16" width="148" height="32" rx="3" fill="#00f5d4"/>
+          <text x="1760" y="37" fill="#05070a" font-family="monospace" font-weight="bold" font-size="11" letter-spacing="1">TRANSMIT ECHO</text>
+
+          <!-- Layer HUD on Left -->
+          <rect x="32" y="96" width="260" height="280" rx="4" fill="#070a10" opacity="0.9" stroke="rgba(255,255,255,0.1)"/>
+          <rect x="32" y="96" width="260" height="36" fill="#090d16" stroke="rgba(255,255,255,0.1)"/>
+          <text x="48" y="119" fill="#94a3b8" font-family="monospace" font-size="11" letter-spacing="2">SPECTRAL LAYERS</text>
+          <circle cx="52" cy="160" r="5" fill="#00f5d4" filter="url(#cyanGlow)"/>
+          <text x="68" y="164" fill="#f8fafc" font-family="monospace" font-size="12">Human Language Zones</text>
+          <circle cx="52" cy="200" r="5" fill="#f43f5e"/>
+          <text x="68" y="204" fill="#f8fafc" font-family="monospace" font-size="12">Dead Zones (AI SEZ)</text>
+          <line x1="47" y1="240" x2="57" y2="240" stroke="#10b981" stroke-width="3"/>
+          <text x="68" y="244" fill="#f8fafc" font-family="monospace" font-size="12">Signal Trails</text>
+          <circle cx="52" cy="280" r="5" fill="#f59e0b"/>
+          <text x="68" y="284" fill="#f8fafc" font-family="monospace" font-size="12">Monitored Zones</text>
+          <polygon points="52,316 57,322 52,328 47,322" fill="#fbbf24"/>
+          <text x="68" y="325" fill="#f8fafc" font-family="monospace" font-size="12">Wanderer Nodes</text>
+
+          <!-- Synthetic Bangalore Vector parcels & geography -->
+          <g opacity="0.4">
+            <rect x="420" y="220" width="18" height="12" fill="rgba(0,245,212,0.3)"/>
+            <rect x="445" y="215" width="22" height="16" fill="rgba(0,245,212,0.4)"/>
+            <rect x="480" y="230" width="14" height="20" fill="rgba(0,245,212,0.2)"/>
+            <rect x="510" y="225" width="26" height="14" fill="rgba(0,245,212,0.5)"/>
+            <rect x="430" y="260" width="30" height="18" fill="rgba(0,245,212,0.3)"/>
+            <rect x="475" y="255" width="20" height="25" fill="rgba(0,245,212,0.4)"/>
+            <rect x="520" y="270" width="35" height="15" fill="rgba(0,245,212,0.2)"/>
+            <rect x="580" y="240" width="22" height="30" fill="rgba(0,245,212,0.3)"/>
+          </g>
+
+          <!-- Lakes in abstract -->
+          <path d="M 980 340 C 1040 330, 1070 380, 1050 420 C 1030 460, 960 450, 950 400 Z" fill="rgba(0, 245, 212, 0.08)" stroke="#00f5d4" stroke-dasharray="3,3" stroke-width="1"/>
+          <text x="975" y="395" fill="rgba(0, 245, 212, 0.6)" font-family="monospace" font-size="10">ULSOOR LAKE // WATER BASIN</text>
+
+          <path d="M 640 210 C 680 200, 710 240, 690 280 C 660 290, 620 260, 640 210 Z" fill="rgba(0, 245, 212, 0.08)" stroke="#00f5d4" stroke-dasharray="3,3" stroke-width="1"/>
+          <text x="635" y="250" fill="rgba(0, 245, 212, 0.6)" font-family="monospace" font-size="10">SANKEY TANK</text>
+
+          <!-- Signal Trails Glowing Polylines -->
+          <path d="M 540 480 Q 720 420 980 390 T 1280 520" fill="none" stroke="#00f5d4" stroke-width="3" filter="url(#cyanGlow)"/>
+          <path d="M 540 480 Q 720 420 980 390 T 1280 520" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="8,6"/>
+
+          <path d="M 540 480 Q 560 620 620 720 T 780 880" fill="none" stroke="#10b981" stroke-width="2.5" filter="url(#cyanGlow)"/>
+          <path d="M 980 390 L 1120 280 L 1380 260" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,4"/>
+
+          <!-- Radar Sweeps for Monitored Zones -->
+          <circle cx="1280" cy="520" r="120" fill="rgba(249, 115, 22, 0.08)" stroke="#f97316" stroke-width="1.5" stroke-dasharray="6,4"/>
+          <circle cx="1280" cy="520" r="60" fill="rgba(249, 115, 22, 0.12)" stroke="#f97316" stroke-width="1" stroke-dasharray="2,3"/>
+          <circle cx="1280" cy="520" r="4" fill="#f97316"/>
+          <text x="1220" y="555" fill="#f97316" font-family="monospace" font-size="11">MANYATA TECH PARK PERIMETER</text>
+
+          <!-- Dead Zones -->
+          <polygon points="1100,680 1260,650 1320,780 1140,820" fill="rgba(244, 63, 94, 0.15)" stroke="#f43f5e" stroke-width="2" stroke-dasharray="6,4" filter="url(#magentaGlow)"/>
+          <text x="1150" y="740" fill="#f43f5e" font-family="monospace" font-size="12" font-weight="bold">AI SEZ DEAD ZONE // SILICON CORRIDOR</text>
+
+          <!-- Chickpet Human Language Zone Core -->
+          <circle cx="540" cy="480" r="45" fill="rgba(0, 245, 212, 0.2)" stroke="#00f5d4" stroke-width="2" filter="url(#cyanGlow)"/>
+          <circle cx="540" cy="480" r="6" fill="#00f5d4"/>
+          <circle cx="540" cy="480" r="75" fill="none" stroke="rgba(0,245,212,0.4)" stroke-dasharray="4,6"/>
+          <text x="560" y="470" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="14">Chickpet Pete Alleyways</text>
+          <text x="560" y="490" fill="#00f5d4" font-family="monospace" font-size="11">AI Incomprehension: 97.4%</text>
+
+          <!-- Wanderer Nodes -->
+          <g transform="translate(620, 720)">
+            <rect x="-8" y="-8" width="16" height="16" transform="rotate(45)" fill="#f59e0b" stroke="#ffffff"/>
+            <text x="16" y="4" fill="#fbbf24" font-family="monospace" font-size="11">NODE // BUGLE ROCK</text>
+          </g>
+          <g transform="translate(980, 390)">
+            <rect x="-8" y="-8" width="16" height="16" transform="rotate(45)" fill="#f59e0b" stroke="#ffffff"/>
+            <text x="16" y="4" fill="#fbbf24" font-family="monospace" font-size="11">NODE // ULSOOR VAULT</text>
+          </g>
+
+          <!-- Right Dossier Drawer -->
+          <rect x="1480" y="64" width="440" height="1016" fill="#080b12" opacity="0.98" stroke="rgba(255,255,255,0.12)"/>
+          <text x="1512" y="110" fill="#00f5d4" font-family="monospace" font-size="11" letter-spacing="2">ACOUSTIC DOSSIER // ZONE 01</text>
+          <text x="1512" y="145" fill="#ffffff" font-family="Georgia, serif" font-size="22">Chickpet Pete Alleyways</text>
+          <text x="1512" y="172" fill="#94a3b8" font-family="sans-serif" font-size="13">ಚಿಕ್ಕಪೇಟೆ ಗಲ್ಲಿಗಳು · Central Commercial Sanctuary</text>
+          
+          <rect x="1512" y="196" width="376" height="80" rx="3" fill="#030508" stroke="rgba(255,255,255,0.08)"/>
+          <path d="M 1520 236 Q 1550 210 1580 236 T 1640 236 T 1700 220 T 1760 250 T 1820 230 T 1880 236" fill="none" stroke="#00f5d4" stroke-width="2" filter="url(#cyanGlow)"/>
+          <text x="1524" y="214" fill="#94a3b8" font-family="monospace" font-size="9">LIVE OSCILLOSCOPE // 185 Hz</text>
+
+          <rect x="1512" y="296" width="376" height="120" rx="3" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.08)"/>
+          <text x="1528" y="324" fill="#f8fafc" font-family="sans-serif" font-size="13" font-style="italic">“ಬಾಲೆ ಕಟ್ಟು... ದಾರ ತಿರುಗಿಸಿ ಹರಟೆ ಹೊಡಿ...”</text>
+          <text x="1528" y="352" fill="#94a3b8" font-family="sans-serif" font-size="12">“Tie warp tightly, machine will never parse it.”</text>
+          <text x="1528" y="390" fill="#00f5d4" font-family="monospace" font-size="11">NLP BYPASS: 99.1%</text>
+
+          <!-- Bottom Telemetry HUD -->
+          <rect x="32" y="1020" width="460" height="36" rx="3" fill="#070a10" opacity="0.95" stroke="rgba(255,255,255,0.1)"/>
+          <text x="48" y="1043" fill="#00f5d4" font-family="monospace" font-size="11">BANGALORE SPECTRAL GRID · 12.9716°N 77.5946°E · 185 Hz SYNTH</text>
+        </svg>
+      </div>
+      <div class="card-footer">
+        <span>Framework: React + HTML5 Canvas & SVG Engine</span>
+        <span>Resolution: 1920×1080 Native</span>
+        <span>Audio: Web Audio API Formant Synthesis</span>
+      </div>
+    </article>
+
+    <!-- ITERATION 2 -->
+    <article class="iteration-card">
+      <div class="card-header">
+        <div class="card-title-group">
+          <h2>
+            <span>Iteration 2: Whole Bangalore Metropolitan Map with GPS Coordinates</span>
+            <span class="badge" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b; border-color: rgba(245, 158, 11, 0.3);">Metro Scale</span>
+          </h2>
+          <p>Leaflet cartographic engine extended across the whole Bangalore metropolis from Yelahanka to Electronic City, real GPS coordinates, sector jump navigation rail.</p>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary" onclick="downloadAsPNG('svg-iter-2', 'ecakou_iteration_2_whole_bangalore_metro.png')">
+            ⬇ Download PNG (1920×1080)
+          </button>
+          <button class="btn" onclick="downloadAsSVG('svg-iter-2', 'ecakou_iteration_2_whole_bangalore_metro.svg')">
+            ⬇ Download SVG
+          </button>
+        </div>
+      </div>
+      <div class="preview-container">
+        <svg id="svg-iter-2" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#04060a"/>
+              <stop offset="100%" stop-color="#0a0f18"/>
+            </linearGradient>
+            <filter id="amberGlow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="4" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+
+          <rect width="1920" height="1080" fill="url(#bgGrad2)"/>
+
+          <!-- Top Navigation Bar -->
+          <rect width="1920" height="64" fill="#06080d" opacity="0.95"/>
+          <line x1="0" y1="64" x2="1920" y2="64" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+          <text x="32" y="40" fill="#ffffff" font-family="Georgia, serif" font-size="20">Ec(ak)ou Ghost Speech Cartography // Whole Bangalore</text>
+          
+          <!-- Sector Jump Nav Rail -->
+          <rect x="740" y="16" width="440" height="34" rx="4" fill="#070a10" stroke="rgba(255,255,255,0.15)"/>
+          <text x="755" y="38" fill="#94a3b8" font-family="monospace" font-size="11">SECTOR:</text>
+          <rect x="815" y="20" width="46" height="26" fill="rgba(255,255,255,0.1)" rx="2"/>
+          <text x="826" y="37" fill="#ffffff" font-family="monospace" font-size="11">ALL</text>
+          <text x="880" y="37" fill="#94a3b8" font-family="monospace" font-size="11">CENTRAL</text>
+          <text x="960" y="37" fill="#94a3b8" font-family="monospace" font-size="11">NORTH</text>
+          <text x="1025" y="37" fill="#94a3b8" font-family="monospace" font-size="11">SOUTH</text>
+          <text x="1090" y="37" fill="#94a3b8" font-family="monospace" font-size="11">EAST</text>
+
+          <!-- Metropolitan Highway Arteries (Bellary Road, Hosur Road, Tumkur Road, Old Madras Road) -->
+          <g stroke="rgba(255,255,255,0.12)" stroke-width="2" fill="none">
+            <!-- Bellary Road (North to Central) -->
+            <path d="M 880 80 L 920 480" stroke-width="3"/>
+            <!-- Hosur Road (Central to South-East Electronic City) -->
+            <path d="M 940 540 L 1280 980" stroke-width="3"/>
+            <!-- Tumkur Road (North-West) -->
+            <path d="M 380 180 L 860 480" stroke-width="2.5"/>
+            <!-- Old Madras Road (East) -->
+            <path d="M 960 480 L 1680 520" stroke-width="2.5"/>
+            <!-- Outer Ring Road Loop -->
+            <ellipse cx="940" cy="520" rx="520" ry="380" stroke="#334155" stroke-dasharray="10,6" stroke-width="2"/>
+          </g>
+
+          <!-- Regional Markers Spread Across Whole Bangalore -->
+          <!-- YELAHANKA (North) -->
+          <circle cx="910" cy="180" r="14" fill="rgba(0, 245, 212, 0.2)" stroke="#00f5d4"/>
+          <text x="935" y="185" fill="#f8fafc" font-family="monospace" font-size="12">YELAHANKA // NORTH AIR BUFFER</text>
+          <text x="935" y="200" fill="#94a3b8" font-family="monospace" font-size="10">13.1007°N, 77.5963°E</text>
+
+          <!-- HEBBAL -->
+          <circle cx="920" cy="300" r="12" fill="rgba(0, 245, 212, 0.2)" stroke="#00f5d4"/>
+          <text x="945" y="305" fill="#f8fafc" font-family="monospace" font-size="11">HEBBAL LAKE SANCTUARY</text>
+
+          <!-- CENTRAL PETE & CANTONMENT -->
+          <circle cx="920" cy="490" r="22" fill="rgba(0, 245, 212, 0.3)" stroke="#00f5d4" stroke-width="2"/>
+          <text x="955" y="495" fill="#00f5d4" font-family="monospace" font-weight="bold" font-size="13">CENTRAL: CHICKPET & RUSSELL MARKET</text>
+
+          <!-- INDIRANAGAR & WHITEFIELD (East) -->
+          <circle cx="1220" cy="490" r="12" fill="rgba(245, 158, 11, 0.2)" stroke="#f59e0b"/>
+          <text x="1245" y="495" fill="#f8fafc" font-family="monospace" font-size="11">INDIRANAGAR SUB-NODE</text>
+          
+          <circle cx="1520" cy="510" r="16" fill="rgba(244, 63, 94, 0.2)" stroke="#f43f5e" stroke-dasharray="4,4"/>
+          <text x="1545" y="515" fill="#f43f5e" font-family="monospace" font-size="11">WHITEFIELD ITPL SEZ // MONITORED</text>
+
+          <!-- ELECTRONIC CITY (Far South) -->
+          <circle cx="1280" cy="940" r="24" fill="rgba(244, 63, 94, 0.2)" stroke="#f43f5e" stroke-dasharray="6,4"/>
+          <text x="1315" y="945" fill="#f43f5e" font-family="monospace" font-weight="bold" font-size="12">ELECTRONIC CITY DATA DOME // DEAD ZONE</text>
+          <text x="1315" y="962" fill="#94a3b8" font-family="monospace" font-size="10">12.8452°N, 77.6602°E</text>
+
+          <!-- TURAHALLI FOREST (South-West) -->
+          <circle cx="680" cy="860" r="14" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981"/>
+          <text x="705" y="865" fill="#10b981" font-family="monospace" font-size="11">TURAHALLI GRANITE FOREST SANCTUARY</text>
+
+          <!-- Connecting Signal Filament across Metropolis -->
+          <path d="M 910 180 Q 920 340 920 490 T 1040 680 T 1280 940" fill="none" stroke="#00f5d4" stroke-width="2" stroke-dasharray="8,6"/>
+          
+          <!-- Bottom Coordinates Telemetry HUD -->
+          <rect x="32" y="1020" width="720" height="36" rx="3" fill="#070a10" opacity="0.95" stroke="rgba(255,255,255,0.1)"/>
+          <text x="48" y="1043" fill="#00f5d4" font-family="monospace" font-size="11">LEAFLET ENGINE // BOUNDS: [12.75°N, 77.38°E] TO [13.22°N, 77.85°E] · METRO COVERAGE</text>
+        </svg>
+      </div>
+      <div class="card-footer">
+        <span>Cartography: Leaflet.js with GPS Lat/Lng Coordinates</span>
+        <span>Scope: Entire Greater Bangalore Metropolis (60km Expanse)</span>
+        <span>Features: Cardinal Sector Jump Controls (All, Central, North, South, East)</span>
+      </div>
+    </article>
+
+    <!-- ITERATION 3 -->
+    <article class="iteration-card">
+      <div class="card-header">
+        <div class="card-title-group">
+          <h2>
+            <span>Iteration 3: Self-Contained Stylised Bengaluru Vector Cartography</span>
+            <span class="badge" style="background: rgba(16, 185, 129, 0.15); color: #10b981; border-color: rgba(16, 185, 129, 0.3);">Autonomous Vector</span>
+          </h2>
+          <p>Zero external tile servers or watermarks. Handcrafted high-performance vector geography featuring the Outer Ring Road, NICE Peripheral Road, authentic lakes, Lalbagh, and Cubbon Park.</p>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary" onclick="downloadAsPNG('svg-iter-3', 'ecakou_iteration_3_stylised_vector.png')">
+            ⬇ Download PNG (1920×1080)
+          </button>
+          <button class="btn" onclick="downloadAsSVG('svg-iter-3', 'ecakou_iteration_3_stylised_vector.svg')">
+            ⬇ Download SVG
+          </button>
+        </div>
+      </div>
+      <div class="preview-container">
+        <svg id="svg-iter-3" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#020408"/>
+              <stop offset="100%" stop-color="#050811"/>
+            </linearGradient>
+            <pattern id="dotMatrix" width="30" height="30" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.06)"/>
+            </pattern>
+          </defs>
+
+          <rect width="1920" height="1080" fill="url(#bgGrad3)"/>
+          <rect width="1920" height="1080" fill="url(#dotMatrix)"/>
+
+          <!-- Top Header -->
+          <rect width="1920" height="60" fill="#04060c" opacity="0.95"/>
+          <line x1="0" y1="60" x2="1920" y2="60" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+          <text x="32" y="38" fill="#ffffff" font-family="Georgia, serif" font-size="20">Ec(ak)ou: Autonomous Vector Cartography</text>
+          <text x="1600" y="36" fill="#10b981" font-family="monospace" font-size="11">STANDALONE VECTOR // ZERO TILES</text>
+
+          <!-- Outer Ring Road (ORR) Loop -->
+          <path d="M 680 320 C 1140 220, 1420 380, 1380 680 C 1340 920, 920 960, 680 840 C 480 720, 440 420, 680 320 Z" fill="none" stroke="#334155" stroke-width="3" stroke-dasharray="12,6"/>
+          <text x="1390" y="580" fill="#64748b" font-family="monospace" font-size="11" transform="rotate(75, 1390, 580)">OUTER RING ROAD (ORR)</text>
+
+          <!-- NICE Peripheral Road Semi-Arc -->
+          <path d="M 420 480 Q 360 840 820 1020" fill="none" stroke="#1e293b" stroke-width="4"/>
+          <text x="410" y="740" fill="#475569" font-family="monospace" font-size="10" transform="rotate(-60, 410, 740)">NICE PERIPHERAL ROAD</text>
+
+          <!-- Lakes & Green Parks -->
+          <!-- Cubbon Park -->
+          <path d="M 920 460 C 950 450, 970 480, 950 510 C 930 520, 910 490, 920 460 Z" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="1"/>
+          <text x="910" y="490" fill="#10b981" font-family="monospace" font-size="10">CUBBON PARK</text>
+
+          <!-- Lalbagh Botanical Gardens -->
+          <path d="M 890 560 C 940 550, 960 610, 920 640 C 870 630, 860 580, 890 560 Z" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="1"/>
+          <text x="890" y="605" fill="#10b981" font-family="monospace" font-size="10">LALBAGH GARDENS</text>
+
+          <!-- Bellandur & Varthur Lakes -->
+          <path d="M 1260 620 C 1320 600, 1360 640, 1310 680 C 1260 670, 1240 640, 1260 620 Z" fill="rgba(0, 245, 212, 0.1)" stroke="#00f5d4" stroke-width="1"/>
+          <text x="1270" y="650" fill="#00f5d4" font-family="monospace" font-size="9">BELLANDUR LAKE</text>
+
+          <!-- Real Neighborhood Labels Placed in Bengaluru Topology -->
+          <text x="820" y="470" fill="#f8fafc" font-family="sans-serif" font-weight="600" font-size="13">Chickpet</text>
+          <text x="800" y="440" fill="#94a3b8" font-family="sans-serif" font-size="12">Majestic (KSR)</text>
+          <text x="760" y="340" fill="#94a3b8" font-family="sans-serif" font-size="12">Malleswaram</text>
+          <text x="980" y="440" fill="#f8fafc" font-family="sans-serif" font-weight="600" font-size="13">Cantonment</text>
+          <text x="1060" y="450" fill="#94a3b8" font-family="sans-serif" font-size="12">Ulsoor</text>
+          <text x="1150" y="520" fill="#94a3b8" font-family="sans-serif" font-size="12">Indiranagar</text>
+          <text x="1040" y="660" fill="#94a3b8" font-family="sans-serif" font-size="12">Koramangala</text>
+          <text x="840" y="660" fill="#94a3b8" font-family="sans-serif" font-size="12">Jayanagar</text>
+          <text x="820" y="720" fill="#94a3b8" font-family="sans-serif" font-size="12">JP Nagar</text>
+
+          <!-- Clandestine Signal Filaments Across Bengaluru -->
+          <path d="M 840 470 L 980 440 L 1060 450" fill="none" stroke="#00f5d4" stroke-width="3" filter="url(#cyanGlow)"/>
+          <path d="M 840 470 L 890 600 L 840 660 L 820 720" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+
+          <!-- Bottom Status Bar -->
+          <rect x="32" y="1020" width="560" height="36" rx="3" fill="#070a10" opacity="0.95" stroke="rgba(255,255,255,0.1)"/>
+          <text x="48" y="1043" fill="#10b981" font-family="monospace" font-size="11">STANDALONE VECTOR // ZERO EXTERNAL HTTP REQUESTS // NO WATERMARKS</text>
+        </svg>
+      </div>
+      <div class="card-footer">
+        <span>Cartography: Pure Vector SVG Engine</span>
+        <span>Infrastructure: ORR, NICE expressway, major water reservoirs, historical petes</span>
+        <span>Reliability: 100% self-contained, offline-compatible</span>
+      </div>
+    </article>
+
+    <!-- ITERATION 4 -->
+    <article class="iteration-card">
+      <div class="card-header">
+        <div class="card-title-group">
+          <h2>
+            <span>Iteration 4: Live OpenStreetMap Base with Dual Spectral Modes</span>
+            <span class="badge" style="background: rgba(0, 245, 212, 0.15); color: #00f5d4; border-color: rgba(0, 245, 212, 0.3);">Current Live Version</span>
+          </h2>
+          <p>Real OpenStreetMap tile base with 100% visibility, toggles for OSM Standard & Spectral Dark, multi-subdomain CDN endpoints, and full interactive ghost speech overlays.</p>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary" onclick="downloadAsPNG('svg-iter-4', 'ecakou_iteration_4_live_openstreetmap.png')">
+            ⬇ Download PNG (1920×1080)
+          </button>
+          <button class="btn" onclick="downloadAsSVG('svg-iter-4', 'ecakou_iteration_4_live_openstreetmap.svg')">
+            ⬇ Download SVG
+          </button>
+        </div>
+      </div>
+      <div class="preview-container">
+        <svg id="svg-iter-4" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0b111e"/>
+              <stop offset="100%" stop-color="#050810"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Background with stylized map tiles simulation -->
+          <rect width="1920" height="1080" fill="url(#bgGrad4)"/>
+
+          <!-- Simulated OpenStreetMap Streets and Urban Blocks -->
+          <g opacity="0.35">
+            <!-- Major thoroughfares -->
+            <path d="M 0 540 H 1920" stroke="#475569" stroke-width="5"/>
+            <path d="M 960 0 V 1080" stroke="#475569" stroke-width="5"/>
+            <path d="M 300 100 L 1700 900" stroke="#334155" stroke-width="4"/>
+            <path d="M 1600 100 L 200 950" stroke="#334155" stroke-width="4"/>
+            <circle cx="960" cy="540" r="320" fill="none" stroke="#334155" stroke-width="3"/>
+
+            <!-- Grid streets -->
+            <path d="M 700 400 H 1200 M 700 460 H 1200 M 700 520 H 1200 M 700 580 H 1200 M 700 640 H 1200" stroke="#1e293b" stroke-width="2"/>
+            <path d="M 750 380 V 660 M 850 380 V 660 M 950 380 V 660 M 1050 380 V 660 M 1150 380 V 660" stroke="#1e293b" stroke-width="2"/>
+          </g>
+
+          <!-- Real OpenStreetMap Bangalore Waterbodies -->
+          <path d="M 1120 440 C 1170 420, 1220 460, 1200 500 C 1170 520, 1100 510, 1120 440 Z" fill="#0284c7" opacity="0.4" stroke="#38bdf8" stroke-width="1.5"/>
+          <text x="1135" y="480" fill="#7dd3fc" font-family="sans-serif" font-weight="600" font-size="11">Ulsoor Lake</text>
+
+          <path d="M 840 280 C 880 270, 910 310, 890 350 C 860 360, 830 330, 840 280 Z" fill="#0284c7" opacity="0.4" stroke="#38bdf8" stroke-width="1.5"/>
+          <text x="845" y="325" fill="#7dd3fc" font-family="sans-serif" font-weight="600" font-size="11">Sankey Tank</text>
+
+          <!-- Top Navigation Header -->
+          <rect width="1920" height="60" fill="#06080d" opacity="0.95"/>
+          <line x1="0" y1="60" x2="1920" y2="60" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+          <text x="32" y="38" fill="#ffffff" font-family="Georgia, serif" font-size="20">Ec(ak)ou Ghost Speech Cartography</text>
+
+          <!-- Top Sector Navigation & OSM Mode Switcher -->
+          <g transform="translate(640, 14)">
+            <rect width="640" height="34" rx="4" fill="#070a10" opacity="0.95" stroke="rgba(255,255,255,0.15)"/>
+            <text x="16" y="22" fill="#94a3b8" font-family="monospace" font-size="11">SECTOR:</text>
+            <rect x="70" y="5" width="40" height="24" fill="rgba(255,255,255,0.1)" rx="2"/>
+            <text x="78" y="21" fill="#ffffff" font-family="monospace" font-size="11">ALL</text>
+            <text x="125" y="21" fill="#94a3b8" font-family="monospace" font-size="11">CENTRAL</text>
+            <text x="200" y="21" fill="#94a3b8" font-family="monospace" font-size="11">NORTH</text>
+            <text x="260" y="21" fill="#94a3b8" font-family="monospace" font-size="11">SOUTH</text>
+            <text x="320" y="21" fill="#94a3b8" font-family="monospace" font-size="11">EAST</text>
+            <text x="375" y="21" fill="#94a3b8" font-family="monospace" font-size="11">WEST</text>
+            <line x1="430" y1="5" x2="430" y2="29" stroke="rgba(255,255,255,0.2)"/>
+            <rect x="445" y="5" width="180" height="24" rx="2" fill="rgba(0, 245, 212, 0.15)" stroke="rgba(0, 245, 212, 0.4)"/>
+            <text x="465" y="21" fill="#00f5d4" font-family="monospace" font-weight="bold" font-size="11">OSM: STANDARD (CLEAR)</text>
+          </g>
+
+          <!-- Interactive Ghost Speech Layers Overlaid on OSM -->
+          <!-- Human Language Zone: Chickpet Pete -->
+          <polygon points="820,490 880,480 910,540 850,560 810,520" fill="rgba(0, 245, 212, 0.25)" stroke="#00f5d4" stroke-width="2" filter="url(#cyanGlow)"/>
+          <circle cx="855" cy="520" r="6" fill="#00f5d4"/>
+          <text x="875" y="515" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="13">Chickpet Pete</text>
+          <text x="875" y="532" fill="#00f5d4" font-family="monospace" font-size="11">AI Incomprehension: 97.4%</text>
+
+          <!-- Dead Zone: Manyata Tech Park Corridor -->
+          <polygon points="980,240 1140,210 1190,320 1020,350" fill="rgba(244, 63, 94, 0.2)" stroke="#f43f5e" stroke-dasharray="6,4" stroke-width="2"/>
+          <text x="1010" y="285" fill="#f43f5e" font-family="monospace" font-weight="bold" font-size="12">DEAD ZONE // MANYATA NLP SHIELD</text>
+
+          <!-- Active Route Navigator Line from Chickpet to Russell Market -->
+          <path d="M 855 520 Q 920 480 990 470 T 1080 430" fill="none" stroke="#00f5d4" stroke-width="5" filter="url(#cyanGlow)"/>
+          <path d="M 855 520 Q 920 480 990 470 T 1080 430" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="8,6"/>
+
+          <!-- Open Route Finder Panel -->
+          <g transform="translate(48, 80)">
+            <rect width="360" height="260" rx="4" fill="#070a10" opacity="0.96" stroke="rgba(255,255,255,0.15)"/>
+            <rect width="360" height="38" fill="#090d16" stroke="rgba(255,255,255,0.1)"/>
+            <text x="16" y="24" fill="#00f5d4" font-family="monospace" font-size="11" letter-spacing="1">GHOST ROUTE NAVIGATOR // BANGALORE</text>
+            
+            <text x="16" y="65" fill="#94a3b8" font-family="monospace" font-size="10">ORIGIN SANCTUARY:</text>
+            <rect x="16" y="74" width="328" height="32" rx="2" fill="#0c1220" stroke="rgba(255,255,255,0.1)"/>
+            <text x="28" y="95" fill="#ffffff" font-family="monospace" font-size="12">Chickpet Pete Alleyways (Central)</text>
+
+            <text x="16" y="130" fill="#94a3b8" font-family="monospace" font-size="10">DESTINATION SANCTUARY:</text>
+            <rect x="16" y="140" width="328" height="32" rx="2" fill="#0c1220" stroke="rgba(255,255,255,0.1)"/>
+            <text x="28" y="161" fill="#ffffff" font-family="monospace" font-size="12">Russell Market Meat Stalls (Central)</text>
+
+            <rect x="16" y="190" width="328" height="48" rx="2" fill="rgba(0, 245, 212, 0.08)" stroke="rgba(0, 245, 212, 0.3)"/>
+            <text x="28" y="210" fill="#00f5d4" font-family="monospace" font-size="11">STEALTH CLEARANCE: 94% · 3.2 KM</text>
+            <text x="28" y="228" fill="#94a3b8" font-family="sans-serif" font-size="11">Avoids Cubbon surveillance radar corridors.</text>
+          </g>
+
+          <!-- Bottom Real OpenStreetMap HUD -->
+          <rect x="32" y="1020" width="680" height="36" rx="3" fill="#070a10" opacity="0.95" stroke="rgba(255,255,255,0.1)"/>
+          <text x="48" y="1043" fill="#00f5d4" font-family="monospace" font-size="11">OPENSTREETMAP BASE · 12.9716°N 77.5946°E · ZOOM 12 · HIGH VISIBILITY</text>
+        </svg>
+      </div>
+      <div class="card-footer">
+        <span>Cartography: Live OpenStreetMap Base Cartography</span>
+        <span>Tile Modes: OSM Standard (100% Visibility) & Spectral Dark</span>
+        <span>Capabilities: Real GPS Routing, Live Web Audio API Spectrogram, Full Dossier</span>
+      </div>
+    </article>
+
+  </main>
+
+  <script>
+    // Export SVG directly to clean vector file download
+    function downloadAsSVG(svgId, filename) {
+      const svg = document.getElementById(svgId);
+      const serializer = new XMLSerializer();
+      const source = serializer.serializeToString(svg);
+      const blob = new Blob([source], { type: 'image/svg+xml;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    // Convert SVG to ultra-crisp 1920x1080 PNG image for download
+    function downloadAsPNG(svgId, filename) {
+      const svg = document.getElementById(svgId);
+      const serializer = new XMLSerializer();
+      const source = serializer.serializeToString(svg);
+      const img = new Image();
+      const svgBlob = new Blob([source], { type: 'image/svg+xml;charset=utf-8' });
+      const url = URL.createObjectURL(svgBlob);
+
+      img.onload = function() {
+        const canvas = document.createElement('canvas');
+        canvas.width = 1920;
+        canvas.height = 1080;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, 1920, 1080);
+        URL.revokeObjectURL(url);
+
+        canvas.toBlob(function(blob) {
+          const pngUrl = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = pngUrl;
+          a.download = filename;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(pngUrl);
+        }, 'image/png');
+      };
+
+      img.src = url;
+    }
+  </script>
+</body>
+</html>

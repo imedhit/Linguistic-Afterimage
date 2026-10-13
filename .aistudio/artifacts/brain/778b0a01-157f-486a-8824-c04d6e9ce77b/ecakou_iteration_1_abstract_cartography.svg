@@ -1,0 +1,128 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070a"/>
+      <stop offset="100%" stop-color="#020305"/>
+    </linearGradient>
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="magentaGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bgGrad1)"/>
+  <rect width="1920" height="1080" fill="url(#gridPattern)"/>
+
+  <!-- Top Navigation Bar -->
+  <rect width="1920" height="64" fill="#06080d" opacity="0.95"/>
+  <line x1="0" y1="64" x2="1920" y2="64" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  
+  <text x="32" y="40" fill="#ffffff" font-family="Georgia, serif" font-size="20" letter-spacing="-0.5">Ec(ak)ou Ghost Speech Cartography</text>
+  
+  <text x="500" y="38" fill="#00f5d4" font-family="monospace" font-size="12" letter-spacing="1">CHICKPET PETE</text>
+  <text x="640" y="38" fill="#94a3b8" font-family="monospace" font-size="12" letter-spacing="1">RUSSELL MARKET</text>
+  <text x="790" y="38" fill="#94a3b8" font-family="monospace" font-size="12" letter-spacing="1">ULSOOR CISTERN</text>
+  <text x="940" y="38" fill="#94a3b8" font-family="monospace" font-size="12" letter-spacing="1">MALLESWARAM</text>
+  <text x="1080" y="38" fill="#94a3b8" font-family="monospace" font-size="12" letter-spacing="1">ROUTE FINDER</text>
+
+  <rect x="1560" y="16" width="160" height="32" rx="3" fill="rgba(0, 245, 212, 0.1)" stroke="rgba(0, 245, 212, 0.4)"/>
+  <text x="1585" y="37" fill="#00f5d4" font-family="monospace" font-size="11" letter-spacing="1">SPECTRAL VISION</text>
+  
+  <rect x="1740" y="16" width="148" height="32" rx="3" fill="#00f5d4"/>
+  <text x="1760" y="37" fill="#05070a" font-family="monospace" font-weight="bold" font-size="11" letter-spacing="1">TRANSMIT ECHO</text>
+
+  <!-- Layer HUD on Left -->
+  <rect x="32" y="96" width="260" height="280" rx="4" fill="#070a10" opacity="0.9" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="32" y="96" width="260" height="36" fill="#090d16" stroke="rgba(255,255,255,0.1)"/>
+  <text x="48" y="119" fill="#94a3b8" font-family="monospace" font-size="11" letter-spacing="2">SPECTRAL LAYERS</text>
+  <circle cx="52" cy="160" r="5" fill="#00f5d4" filter="url(#cyanGlow)"/>
+  <text x="68" y="164" fill="#f8fafc" font-family="monospace" font-size="12">Human Language Zones</text>
+  <circle cx="52" cy="200" r="5" fill="#f43f5e"/>
+  <text x="68" y="204" fill="#f8fafc" font-family="monospace" font-size="12">Dead Zones (AI SEZ)</text>
+  <line x1="47" y1="240" x2="57" y2="240" stroke="#10b981" stroke-width="3"/>
+  <text x="68" y="244" fill="#f8fafc" font-family="monospace" font-size="12">Signal Trails</text>
+  <circle cx="52" cy="280" r="5" fill="#f59e0b"/>
+  <text x="68" y="284" fill="#f8fafc" font-family="monospace" font-size="12">Monitored Zones</text>
+  <polygon points="52,316 57,322 52,328 47,322" fill="#fbbf24"/>
+  <text x="68" y="325" fill="#f8fafc" font-family="monospace" font-size="12">Wanderer Nodes</text>
+
+  <!-- Synthetic Bangalore Vector parcels & geography -->
+  <g opacity="0.4">
+    <rect x="420" y="220" width="18" height="12" fill="rgba(0,245,212,0.3)"/>
+    <rect x="445" y="215" width="22" height="16" fill="rgba(0,245,212,0.4)"/>
+    <rect x="480" y="230" width="14" height="20" fill="rgba(0,245,212,0.2)"/>
+    <rect x="510" y="225" width="26" height="14" fill="rgba(0,245,212,0.5)"/>
+    <rect x="430" y="260" width="30" height="18" fill="rgba(0,245,212,0.3)"/>
+    <rect x="475" y="255" width="20" height="25" fill="rgba(0,245,212,0.4)"/>
+    <rect x="520" y="270" width="35" height="15" fill="rgba(0,245,212,0.2)"/>
+    <rect x="580" y="240" width="22" height="30" fill="rgba(0,245,212,0.3)"/>
+  </g>
+
+  <!-- Lakes in abstract -->
+  <path d="M 980 340 C 1040 330, 1070 380, 1050 420 C 1030 460, 960 450, 950 400 Z" fill="rgba(0, 245, 212, 0.08)" stroke="#00f5d4" stroke-dasharray="3,3" stroke-width="1"/>
+  <text x="975" y="395" fill="rgba(0, 245, 212, 0.6)" font-family="monospace" font-size="10">ULSOOR LAKE // WATER BASIN</text>
+
+  <!-- Signal Trails Glowing Polylines -->
+  <path d="M 540 480 Q 720 420 980 390 T 1280 520" fill="none" stroke="#00f5d4" stroke-width="3" filter="url(#cyanGlow)"/>
+  <path d="M 540 480 Q 720 420 980 390 T 1280 520" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="8,6"/>
+  <path d="M 540 480 Q 560 620 620 720 T 780 880" fill="none" stroke="#10b981" stroke-width="2.5" filter="url(#cyanGlow)"/>
+
+  <!-- Radar Sweeps for Monitored Zones -->
+  <circle cx="1280" cy="520" r="120" fill="rgba(249, 115, 22, 0.08)" stroke="#f97316" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="1280" cy="520" r="60" fill="rgba(249, 115, 22, 0.12)" stroke="#f97316" stroke-width="1" stroke-dasharray="2,3"/>
+  <circle cx="1280" cy="520" r="4" fill="#f97316"/>
+  <text x="1220" y="555" fill="#f97316" font-family="monospace" font-size="11">MANYATA TECH PARK PERIMETER</text>
+
+  <!-- Dead Zones -->
+  <polygon points="1100,680 1260,650 1320,780 1140,820" fill="rgba(244, 63, 94, 0.15)" stroke="#f43f5e" stroke-width="2" stroke-dasharray="6,4" filter="url(#magentaGlow)"/>
+  <text x="1150" y="740" fill="#f43f5e" font-family="monospace" font-size="12" font-weight="bold">AI SEZ DEAD ZONE // SILICON CORRIDOR</text>
+
+  <!-- Chickpet Human Language Zone Core -->
+  <circle cx="540" cy="480" r="45" fill="rgba(0, 245, 212, 0.2)" stroke="#00f5d4" stroke-width="2" filter="url(#cyanGlow)"/>
+  <circle cx="540" cy="480" r="6" fill="#00f5d4"/>
+  <circle cx="540" cy="480" r="75" fill="none" stroke="rgba(0,245,212,0.4)" stroke-dasharray="4,6"/>
+  <text x="560" y="470" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="14">Chickpet Pete Alleyways</text>
+  <text x="560" y="490" fill="#00f5d4" font-family="monospace" font-size="11">AI Incomprehension: 97.4%</text>
+
+  <!-- Wanderer Nodes -->
+  <g transform="translate(620, 720)">
+    <rect x="-8" y="-8" width="16" height="16" transform="rotate(45)" fill="#f59e0b" stroke="#ffffff"/>
+    <text x="16" y="4" fill="#fbbf24" font-family="monospace" font-size="11">NODE // BUGLE ROCK</text>
+  </g>
+  <g transform="translate(980, 390)">
+    <rect x="-8" y="-8" width="16" height="16" transform="rotate(45)" fill="#f59e0b" stroke="#ffffff"/>
+    <text x="16" y="4" fill="#fbbf24" font-family="monospace" font-size="11">NODE // ULSOOR VAULT</text>
+  </g>
+
+  <!-- Right Dossier Drawer -->
+  <rect x="1480" y="64" width="440" height="1016" fill="#080b12" opacity="0.98" stroke="rgba(255,255,255,0.12)"/>
+  <text x="1512" y="110" fill="#00f5d4" font-family="monospace" font-size="11" letter-spacing="2">ACOUSTIC DOSSIER // ZONE 01</text>
+  <text x="1512" y="145" fill="#ffffff" font-family="Georgia, serif" font-size="22">Chickpet Pete Alleyways</text>
+  <text x="1512" y="172" fill="#94a3b8" font-family="sans-serif" font-size="13">ಚಿಕ್ಕಪೇಟೆ ಗಲ್ಲಿಗಳು · Central Commercial Sanctuary</text>
+  
+  <rect x="1512" y="196" width="376" height="80" rx="3" fill="#030508" stroke="rgba(255,255,255,0.08)"/>
+  <path d="M 1520 236 Q 1550 210 1580 236 T 1640 236 T 1700 220 T 1760 250 T 1820 230 T 1880 236" fill="none" stroke="#00f5d4" stroke-width="2" filter="url(#cyanGlow)"/>
+  <text x="1524" y="214" fill="#94a3b8" font-family="monospace" font-size="9">LIVE OSCILLOSCOPE // 185 Hz</text>
+
+  <rect x="1512" y="296" width="376" height="120" rx="3" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="1528" y="324" fill="#f8fafc" font-family="sans-serif" font-size="13" font-style="italic">“ಬಾಲೆ ಕಟ್ಟು... ದಾರ ತಿರುಗಿಸಿ ಹರಟೆ ಹೊಡಿ...”</text>
+  <text x="1528" y="352" fill="#94a3b8" font-family="sans-serif" font-size="12">“Tie warp tightly, machine will never parse it.”</text>
+  <text x="1528" y="390" fill="#00f5d4" font-family="monospace" font-size="11">NLP BYPASS: 99.1%</text>
+
+  <!-- Bottom Telemetry HUD -->
+  <rect x="32" y="1020" width="460" height="36" rx="3" fill="#070a10" opacity="0.95" stroke="rgba(255,255,255,0.1)"/>
+  <text x="48" y="1043" fill="#00f5d4" font-family="monospace" font-size="11">BANGALORE SPECTRAL GRID · 12.9716°N 77.5946°E · 185 Hz SYNTH</text>
+</svg>

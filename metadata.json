@@ -1,0 +1,6 @@
+{
+  "name": "Ec(ak)ou: Ghost Speech Cartography",
+  "description": "An interactive speculative cartography of Bangalore revealing hidden Human Language Zones, clandestine signal trails, and Wanderer nodes shielded from AI surveillance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
