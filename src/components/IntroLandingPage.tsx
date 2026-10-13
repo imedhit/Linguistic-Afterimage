@@ -27,6 +27,13 @@ export const IntroLandingPage: React.FC<IntroLandingPageProps> = ({ onExplore })
   const COLOR_HOVER = '#1d2f4d';   // Interactive hover cell deep navy/blue accent
   const COLOR_HOVER_BORDER = '#38639e';
 
+  // Pixel box style matching 1st page dark/greyish blue (#151b24) with grid lines
+  const pixelBoxGridStyle: React.CSSProperties = {
+    backgroundColor: '#151b24',
+    backgroundImage: `linear-gradient(to right, rgba(255, 255, 255, 0.07) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 1px, transparent 1px)`,
+    backgroundSize: '20px 20px',
+  };
+
   // Helper to calculate cell size: reduced by 30% from previous size
   const getCellSize = (w: number) => {
     const base = Math.max(24, Math.min(32, Math.floor(w / 42)));
@@ -464,140 +471,104 @@ export const IntroLandingPage: React.FC<IntroLandingPageProps> = ({ onExplore })
         />
 
         {/* Extended Page Content: Left half (Narrative) + Right half (How to read the Map inside dark/greyish-blue pixelated-edge box) + Centered Explore button */}
-        <div className="relative z-10 flex-1 w-full max-w-7xl mx-auto px-4 sm:px-8 md:px-12 py-8 sm:py-12 flex flex-col justify-between">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-14 items-start">
+        <div className="relative z-10 flex-1 w-full max-w-7xl mx-auto px-4 sm:px-8 md:px-12 pt-16 sm:pt-20 md:pt-24 pb-4 sm:pb-6 flex flex-col justify-between">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-14 items-stretch mt-4 sm:mt-6 md:mt-8">
             {/* Left Half: Narrative (Scaled up by 0.3x / 1.3x) */}
-            <div className="space-y-4 sm:space-y-5 text-left text-[#151b24] pt-2 sm:pt-4">
+            <div className="flex flex-col justify-between pt-6 sm:pt-7 pb-6 sm:pb-7 text-left text-[#151b24] space-y-4 sm:space-y-5 md:space-y-0">
               {/* Paragraph 1 */}
               <p className="font-sans text-[14px] sm:text-[15px] md:text-[17px] lg:text-[18px] leading-relaxed font-normal text-[#151b24]">
-                Imagine a world where microphones are everywhere, just as cameras are today. In this future, AI can understand every language humans speak and write, including regional dialects, making almost every conversation open to surveillance.
+                Imagine a world where microphones are everywhere, like cameras are today. AI can understand every language and dialect, making private conversations vulnerable to surveillance.
               </p>
 
               {/* Paragraph 2 */}
               <p className="font-sans text-[14px] sm:text-[15px] md:text-[17px] lg:text-[18px] leading-relaxed font-normal text-[#151b24]">
-                In response, people begin searching for ways to communicate beyond AI’s understanding. Spoken language gives way to new and revived forms of communication that combine sounds, gestures, visuals, symbols and other sensory experiences.
+                To protect their privacy, people begin exploring new and revived ways of communicating through sounds, gestures, visuals and symbols.
               </p>
 
-              {/* Paragraph 3 (Bold) */}
-              <p className="font-sans text-[14px] sm:text-[15px] md:text-[17px] lg:text-[18px] leading-relaxed font-bold text-[#151b24]">
-                This project maps how changing ways of communicating could reshape the city’s linguistic landscape and, in turn, its demographics and geography between 2026 and 2050.
-              </p>
-
-              {/* Paragraph 4 (Bold) */}
-              <p className="font-sans text-[14px] sm:text-[15px] md:text-[17px] lg:text-[18px] leading-relaxed font-bold text-[#151b24]">
-                The map brings these possible transformations into space, tracing how languages, communities and the places they inhabit might change in a world where no conversation is truly private.
+              {/* Paragraph 3 */}
+              <p className="font-sans text-[14px] sm:text-[15px] md:text-[17px] lg:text-[18px] leading-relaxed font-normal text-[#151b24]">
+                This project maps how these changing forms of communication could reshape Bengaluru’s languages, demographics and geography between 2026 and 2050.
               </p>
             </div>
 
             {/* Right Half: Dark/Greyish Blue shape with pixelated edges replicating the poster in image.png */}
-            <div className="relative pt-16 sm:pt-20 pb-12 sm:pb-16 px-4 sm:px-6">
-              {/* === PIXELATED EDGES AND FLOATING FRAGMENTS (Exact silhouette in dark/greyish blue #151b24) === */}
+            <div className="relative px-3 sm:px-6 flex flex-col justify-stretch">
+              {/* === PIXELATED EDGES (Uneven yet well-composed silhouette in dark/greyish blue with grid lines) === */}
               <div className="absolute inset-0 pointer-events-none select-none">
-                {/* 1. TOP EDGE PIXEL TOWERS / COLUMNS (Rising from the top of the box) */}
-                <div className="absolute top-16 sm:top-20 left-4 sm:left-6 right-4 sm:right-6">
-                  {/* Column 1 */}
-                  <div className="absolute -top-[24px] left-[7%] w-[5%] h-[24px] bg-[#151b24]" />
-                  {/* Column 2 */}
-                  <div className="absolute -top-[46px] left-[13%] w-[5%] h-[46px] bg-[#151b24]" />
-                  {/* Column 3 */}
-                  <div className="absolute -top-[20px] left-[19%] w-[6%] h-[20px] bg-[#151b24]" />
-                  {/* Column 4 (Tallest left tower like in image) */}
-                  <div className="absolute -top-[68px] left-[26%] w-[7%] h-[68px] bg-[#151b24]" />
-                  {/* Column 5 */}
-                  <div className="absolute -top-[32px] left-[34%] w-[5%] h-[32px] bg-[#151b24]" />
-                  {/* Column 6 */}
-                  <div className="absolute -top-[52px] left-[40%] w-[5%] h-[52px] bg-[#151b24]" />
-                  {/* Column 7 (Cutout dip) */}
-                  <div className="absolute -top-[14px] left-[46%] w-[5%] h-[14px] bg-[#151b24]" />
-                  {/* Column 8 */}
-                  <div className="absolute -top-[56px] left-[52%] w-[6%] h-[56px] bg-[#151b24]" />
-                  {/* Column 9 */}
-                  <div className="absolute -top-[24px] left-[59%] w-[6%] h-[24px] bg-[#151b24]" />
-                  {/* Column 10 (Wide block) */}
-                  <div className="absolute -top-[44px] left-[66%] w-[11%] h-[44px] bg-[#151b24]" />
-                  {/* Column 11 (Tallest right tower like in image) */}
-                  <div className="absolute -top-[64px] left-[78%] w-[8%] h-[64px] bg-[#151b24]" />
-                  {/* Column 12 */}
-                  <div className="absolute -top-[30px] left-[87%] w-[5%] h-[30px] bg-[#151b24]" />
-                  {/* Column 13 */}
-                  <div className="absolute -top-[16px] left-[93%] w-[5%] h-[16px] bg-[#151b24]" />
+                {/* 1. TOP EDGE PIXEL STEPS (Restrained, uneven towers) */}
+                <div className="absolute top-0 left-3 sm:left-6 right-3 sm:right-6">
+                  <div className="absolute -top-[14px] left-[8%] w-[6%] h-[14px]" style={pixelBoxGridStyle} />
+                  <div className="absolute -top-[24px] left-[18%] w-[6%] h-[24px]" style={pixelBoxGridStyle} />
+                  <div className="absolute -top-[12px] left-[28%] w-[5%] h-[12px]" style={pixelBoxGridStyle} />
+                  <div className="absolute -top-[30px] left-[38%] w-[7%] h-[30px]" style={pixelBoxGridStyle} />
+                  <div className="absolute -top-[16px] left-[50%] w-[6%] h-[16px]" style={pixelBoxGridStyle} />
+                  <div className="absolute -top-[26px] left-[62%] w-[8%] h-[26px]" style={pixelBoxGridStyle} />
+                  <div className="absolute -top-[14px] left-[76%] w-[6%] h-[14px]" style={pixelBoxGridStyle} />
+                  <div className="absolute -top-[20px] left-[88%] w-[5%] h-[20px]" style={pixelBoxGridStyle} />
 
-                  {/* 2. FLOATING DETACHED PIXEL BLOCKS ABOVE THE TOP EDGE */}
-                  <div className="absolute -top-[72px] left-[5%] w-[18px] h-[18px] bg-[#151b24]" />
-                  <div className="absolute -top-[58px] left-[11%] w-[26px] h-[14px] bg-[#151b24]" />
-                  <div className="absolute -top-[42px] left-[23%] w-[14px] h-[14px] bg-[#151b24]" />
-                  <div className="absolute -top-[70px] left-[36%] w-[14px] h-[32px] bg-[#151b24]" />
-                  <div className="absolute -top-[54px] left-[48%] w-[32px] h-[16px] bg-[#151b24]" />
-                  <div className="absolute -top-[36px] left-[63%] w-[12px] h-[12px] bg-[#151b24]" />
-                  <div className="absolute -top-[66px] left-[70%] w-[20px] h-[20px] bg-[#151b24]" />
-                  <div className="absolute -top-[50px] left-[77%] w-[34px] h-[18px] bg-[#151b24]" />
+                  {/* Subtle detached pixel accents above top edge */}
+                  <div className="absolute -top-[36px] left-[16%] w-[12px] h-[12px]" style={pixelBoxGridStyle} />
+                  <div className="absolute -top-[38px] left-[42%] w-[12px] h-[12px]" style={pixelBoxGridStyle} />
+                  <div className="absolute -top-[34px] left-[68%] w-[12px] h-[12px]" style={pixelBoxGridStyle} />
                 </div>
 
-                {/* 3. SIDE PIXEL STEPS & NOTCHES (Left and Right borders) */}
-                <div className="absolute top-16 sm:top-20 bottom-12 sm:bottom-16 left-4 sm:left-6 right-4 sm:right-6">
-                  {/* Left edge steps */}
-                  <div className="absolute top-0 -left-[14px] w-[14px] h-[28px] bg-[#151b24]" />
-                  <div className="absolute top-[38%] -left-[10px] w-[10px] h-[26px] bg-[#151b24]" />
-                  <div className="absolute bottom-0 -left-[14px] w-[14px] h-[28px] bg-[#151b24]" />
+                {/* 2. SIDE PIXEL STEPS (Crisp, subtle notches) */}
+                <div className="absolute top-8 bottom-8 left-3 sm:left-6 right-3 sm:right-6">
+                  {/* Left edge notches */}
+                  <div className="absolute top-[18%] -left-[8px] w-[8px] h-[16px]" style={pixelBoxGridStyle} />
+                  <div className="absolute top-[58%] -left-[6px] w-[6px] h-[16px]" style={pixelBoxGridStyle} />
 
-                  {/* Right edge steps */}
-                  <div className="absolute top-0 -right-[18px] w-[18px] h-[34px] bg-[#151b24]" />
-                  <div className="absolute top-[32%] -right-[14px] w-[14px] h-[24px] bg-[#151b24]" />
-                  <div className="absolute bottom-[16%] -right-[16px] w-[16px] h-[28px] bg-[#151b24]" />
-                  {/* Floating square off the right edge */}
-                  <div className="absolute top-[20%] -right-[28px] w-[14px] h-[14px] bg-[#151b24]" />
+                  {/* Right edge notches */}
+                  <div className="absolute top-[28%] -right-[8px] w-[8px] h-[16px]" style={pixelBoxGridStyle} />
+                  <div className="absolute top-[68%] -right-[6px] w-[6px] h-[14px]" style={pixelBoxGridStyle} />
                 </div>
 
-                {/* 4. BOTTOM EDGE PIXEL TEETH & HANGING COLUMNS */}
-                <div className="absolute bottom-12 sm:bottom-16 left-4 sm:left-6 right-4 sm:right-6">
-                  <div className="absolute top-0 left-[6%] w-[6%] h-[26px] bg-[#151b24]" />
-                  <div className="absolute top-0 left-[13%] w-[7%] h-[42px] bg-[#151b24]" />
-                  <div className="absolute top-0 left-[26%] w-[6%] h-[28px] bg-[#151b24]" />
-                  <div className="absolute top-0 left-[38%] w-[5%] h-[16px] bg-[#151b24]" />
-                  <div className="absolute top-0 left-[48%] w-[6%] h-[34px] bg-[#151b24]" />
-                  <div className="absolute top-0 left-[58%] w-[6%] h-[20px] bg-[#151b24]" />
-                  <div className="absolute top-0 left-[68%] w-[8%] h-[38px] bg-[#151b24]" />
-                  <div className="absolute top-0 left-[82%] w-[5%] h-[18px] bg-[#151b24]" />
-
-                  {/* 5. FLOATING DETACHED PIXEL BLOCKS BELOW THE BOTTOM EDGE */}
-                  <div className="absolute top-[34px] left-[20%] w-[24px] h-[24px] bg-[#151b24]" />
-                  <div className="absolute top-[52px] left-[26%] w-[14px] h-[14px] bg-[#151b24]" />
-                  <div className="absolute top-[30px] left-[54%] w-[14px] h-[26px] bg-[#151b24]" />
-                  <div className="absolute top-[28px] left-[72%] w-[18px] h-[18px] bg-[#151b24]" />
+                {/* 3. BOTTOM EDGE PIXEL TEETH (Reduced, uneven yet cleanly composed) */}
+                <div className="absolute bottom-0 left-3 sm:left-6 right-3 sm:right-6">
+                  <div className="absolute top-0 left-[8%] w-[6%] h-[10px]" style={pixelBoxGridStyle} />
+                  <div className="absolute top-0 left-[20%] w-[8%] h-[15px]" style={pixelBoxGridStyle} />
+                  <div className="absolute top-0 left-[34%] w-[5%] h-[8px]" style={pixelBoxGridStyle} />
+                  <div className="absolute top-0 left-[46%] w-[7%] h-[14px]" style={pixelBoxGridStyle} />
+                  <div className="absolute top-0 left-[60%] w-[6%] h-[9px]" style={pixelBoxGridStyle} />
+                  <div className="absolute top-0 left-[72%] w-[8%] h-[16px]" style={pixelBoxGridStyle} />
+                  <div className="absolute top-0 left-[86%] w-[5%] h-[7px]" style={pixelBoxGridStyle} />
                 </div>
               </div>
 
-              {/* === SOLID DARK/GREYISH BLUE CORE (Contains the text with high contrast & crisp padding) === */}
-              <div className="relative z-10 bg-[#151b24] text-white p-6 sm:p-8 lg:p-9 space-y-4 text-left shadow-[0_10px_30px_rgba(21,27,36,0.22)]">
+              {/* === SOLID GREYISH BLUE CORE WITH GRID LINES (Contains the text with high contrast & crisp padding) === */}
+              <div
+                style={pixelBoxGridStyle}
+                className="relative z-10 text-white p-6 sm:p-7 space-y-4 text-left shadow-[0_10px_30px_rgba(21,27,36,0.22)] border border-white/10 flex flex-col justify-between h-full"
+              >
                 <h3 className="font-sans text-base sm:text-lg md:text-xl font-bold text-white tracking-wide">
                   How to read the Map?
                 </h3>
 
                 <p className="font-sans text-[14px] sm:text-[15px] md:text-[17px] lg:text-[18px] leading-relaxed font-normal text-slate-100">
-                  Move through the timeline to explore how languages and forms of communication may shift across the city. As linguistic patterns change, the map visualises their possible effects on where communities live, how populations shift, and how urban spaces transform.
+                  Move through the timeline to explore how Bengaluru’s languages, communities, and urban spaces might change between 2026 and 2050.
                 </p>
 
                 <p className="font-sans text-[14px] sm:text-[15px] md:text-[17px] lg:text-[18px] leading-relaxed font-normal text-slate-100">
-                  The map brings together a 2011 census baseline, projections towards 2050, and speculative future scenarios. The map’s colour-coded zones represent different from AI-monitored areas to human-only zones, showing how the city’s landscape might transform over time.
+                  Combining 2011 census data, future projections, and speculative scenarios, the map uses colour-coded zones to show a possible shift from AI-monitored areas to human-only spaces.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Bottom of Extended Page: EXPLORE NOW button (Aligned in the centre) */}
-          <div className="pt-6 sm:pt-8 flex items-center justify-center">
+          {/* Bottom of Extended Page: EXPLORE NOW button (Moved up & enlarged as requested) */}
+          <div className="pt-4 sm:pt-6 pb-2 sm:pb-4 flex items-center justify-center">
             <button
               onClick={onExplore}
               style={{
                 backgroundColor: '#2b998a', // Map's primary Human-Only Teal
                 color: '#070a0f',
-                boxShadow: '0 5px 18px rgba(43, 153, 138, 0.38)',
+                boxShadow: '0 6px 24px rgba(43, 153, 138, 0.42)',
               }}
-              className="group px-5.5 sm:px-7 py-2.5 sm:py-3 rounded-none font-sans text-xs sm:text-sm md:text-base font-bold tracking-widest uppercase transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer flex items-center gap-2.5 border border-[#1f7a6e]"
+              className="group w-full max-w-[280px] sm:max-w-[340px] md:max-w-[380px] py-3.5 sm:py-4.5 md:py-5 px-8 sm:px-12 rounded-none font-sans text-sm sm:text-base md:text-lg font-bold tracking-[0.2em] uppercase transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer flex items-center justify-center gap-3 sm:gap-4 border border-[#1f7a6e]"
               title="Enter Bengaluru Cartography Spectral Map (Page 2)"
             >
               <span>EXPLORE NOW</span>
-              <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform group-hover:translate-x-1.5 text-slate-950 stroke-[2.5]" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 transition-transform group-hover:translate-x-2 text-slate-950 stroke-[2.5]" />
             </button>
           </div>
         </div>
